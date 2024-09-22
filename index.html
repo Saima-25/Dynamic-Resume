@@ -1,142 +1,69 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Dynamic Resume</title>
-</head>
+    <link rel="stylesheet" type="text/css" href="abc.css" />
+ 
 
-<body>
-    
+  </head>
 
-        <div style="background-color: bisque; font-size: 28; width: 65%;">
-        <Form>
-            <h1 style="background-color: rgb(211, 243, 147); color: rgba(146, 36, 100, 0.986);text-align: center;"><u>Resume</u></h1>
-            <hr style="color: red; width: 50%;">
-            <ol>
-            <li><label for="Name"> Name</label></li>
-            <input type="text" id="Sname" name="Sname"><br>
-            <li><label for="FName">Father Name</label></li>
-            <input type="text" id="LName" name="LName"><br>
-            <li><label for="gender">Gender</label></li><br>
-            <input type="radio" id="Male" name="Gender" value="Male">
-            <label for="Male">Male</label><br>
-            <input type="radio" id="Female" name="Gender" value="Female">
-            <label for="Female">Female</label><br>
-            <li><label for="CNIC"> CNIC</label></li>
-            <input type="numeric" id="numeric" name="CNIC"><br>
-            <li><label for="Nationality">Nationality</label></li>
-            <input type="roman" id="roman" name="Class"><br>
-            
-            <li><label for="address">Address</label></li>
-             <input type="alphanumeric" id="address" name="address"><br>
+  <body>
+    <div>
+        <form id="resume-form-id">
+        <h1><u>Resume</u></h1>
+        <hr />
+        <ol>
+          <li><label for="Name">Name</label></li>
+          <input type="text" id="Sname" name="Sname" /><br />
+          <li><label for="FName">Father Name</label></li>
+          <input type="text" id="LName" name="LName" /><br />
+          <li><label for="gender">Gender</label></li>
+          <br />
+          <input type="radio" id="Male" name="Gender" value="Male" />
+          <label for="Male">Male</label
+          ><br />
+          <input type="radio" id="Female" name="Gender" value="Female" />
+          <label for="Female">Female</label
+          ><br />
+          <li><label for="CNIC">CNIC</label></li>
+          <input type="number" id="numeric" name="CNIC" /><br />
+          <li><label for="Nationality">Nationality</label></li>
+          <input type="text" id="roman" name="Class" /><br />
+          <li><label for="address">Address</label></li>
+          <input type="text" id="address" name="address" /><br />
+        </ol>
 
-</Form>
+        <p>Education</p>
+        
+          <tr id="educationRow1">
+            <td><input type="text" id="educationDegree1" /></td>
+          </tr>
+        
 
-<p><strong>Education:</strong></p>
-<table id="resumeEducation" style="border-collapse: collapse;">
-    <tr>
-        <th>Degree</th>
-        <th>Institution</th>
-        <th>Year</th>
-        <th>Grade</th>
-    </tr>
-    <tr id="educationRow1">
-        <td><input type="text" id="educationDegree1"></td>
-        <td><input type="text" id="educationInstitution1"></td>
-        <td><input type="text" id="educationYear1"></td>
-        <td><input type="text" id="educationGrade1"></td>
-    </tr>
-    <tr id="educationRow2">
-        <td><input type="text" id="educationDegree2"></td>
-        <td><input type="text" id="educationInstitution2"></td>
-        <td><input type="text" id="educationYear2"></td>
-        <td><input type="text" id="educationGrade2"></td>
-    </tr>
-    <tr id="educationRow3">
-        <td><input type="text" id="educationDegree3"></td>
-        <td><input type="text" id="educationInstitution3"></td>
-        <td><input type="text" id="educationYear3"></td>
-        <td><input type="text" id="educationGrade3"></td>
-    </tr>
-    <tr id="educationRow4">
-        <td><input type="text" id="educationDegree4"></td>
-        <td><input type="text" id="educationInstitution4"></td>
-        <td><input type="text" id="educationYear4"></td>
-        <td><input type="text" id="educationGrade4"></td>
-    </tr>
-</table>
-<p><strong>Work Experience:</strong></p>
-<table id="resumeWorkExperience" style="border-collapse: collapse;">
-    <tr>
-        <th>Company</th>
-        <th>Position</th>
-        <th>Duration</th>
-        <th>Responsibilities</th>
-    </tr>
-    <tr id="workExperienceRow1">
-        <td><input type="text" id="workExperienceCompany1"></td>
-        <td><input type="text" id="workExperiencePosition1"></td>
-        <td><input type="text" id="workExperienceDuration1"></td>
-        <td><input type="text" id="workExperienceResponsibilities1"></td>
-    </tr>
-    <tr id="workExperienceRow2">
-        <td><input type="text" id="workExperienceCompany2"></td>
-        <td><input type="text" id="workExperiencePosition2"></td>
-        <td><input type="text" id="workExperienceDuration2"></td>
-        <td><input type="text" id="workExperienceResponsibilities2"></td>
-    </tr>
-    <tr id="workExperienceRow3">
-        <td><input type="text" id="workExperienceCompany3"></td>
-        <td><input type="text" id="workExperiencePosition3"></td>
-        <td><input type="text" id="workExperienceDuration3"></td>
-        <td><input type="text" id="workExperienceResponsibilities3"></td>
-    </tr>
-    <tr id="workExperienceRow4">
-        <td><input type="text" id="workExperienceCompany4"></td>
-        <td><input type="text" id="workExperiencePosition4"></td>
-        <td><input type="text" id="workExperienceDuration4"></td>
-        <td><input type="text" id="workExperienceResponsibilities4"></td>
-    </tr>
-</table>
-<p><strong>Skills:</strong></p>
-<table id="resumeSkills" style="border-collapse:collapse;">
-    <tr>
-        <th>Skill</th>
-        <th>Level</th>
-        <th>Experience</th>
-    </tr>
-    <tr id="skillsRow1">
-        <td><input type="text" id="skillsSkill1"></td>
-        <td><input type="text" id="skillsLevel1"></td>
-        <td><input type="text" id="skillsExperience1"></td>
-    </tr>
-    <tr id="skillsRow2">
-        <td><input type="text" id="skillsSkill2"></td>
-        <td><input type="text" id="skillsLevel2"></td>
-        <td><input type="text" id="skillsExperience2"></td>
-    </tr>
-    <tr id="skillsRow3">
-        <td><input type="text" id="skillsSkill3"></td>
-        <td><input type="text" id="skillsLevel3"></td>
-        <td><input type="text" id="skillsExperience3"></td>
-    </tr>
-    <tr id="skillsRow4">
-        <td><input type="text" id="skillsSkill4"></td>
-        <td><input type="text" id="skillsLevel4"></td>
-        <td><input type="text" id="skillsExperience4"></td>
-    </tr>
-</table>
+        <p>Work Experience</p>
+        
+          <tr id="workExperienceRow1">
+            <td><input type="text" id="workExperienceCompany1" /></td>
+          </tr>
+        
 
-    
-    
-   <button type="button" onclick="generateResume()">Generate Resume</button>
-             
-             
-        <label for="picture">Upload Picture:</label>
-        <input type="file" id="picture" name="picture" accept="image/*"><br>
-        <input type="submit" value="Submit"> 
+        <p>Skills</p>
+        
+          <tr>
+            <td><input type="text" id="skills" /></td>
+          </tr><br>
+        
+
+        <button type="button" onclick="generateResume()">
+          Generate Resume
+        </button>
+        
+      </form>
+      <!-- <p id="error-message"></p>
+      <div id="resume"></div> -->
+      <script src="abc.js" type="text/javascript"></script>
     </div>
-    </div>
-    </body> 
+  </body>
 </html>
